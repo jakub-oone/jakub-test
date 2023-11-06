@@ -1,0 +1,35 @@
+{
+  "version": 8,
+  "sources": {
+    "raster-tiles": {
+      "type": "raster",
+      "tiles": [
+        "http://pruhonice.noemo-group.eu/wp-content/plugins/pruhonice-park-gis/data/Orientacni_mapa_Tiles/Map/{z}/{x}/{y}.png"
+      ],
+      "tileSize": 256
+    },
+    "raster-tiles-aerial": {
+      "type": "raster",
+      "tiles": [
+        "http://pruhonice.noemo-group.eu/wp-content/plugins/pruhonice-park-gis/data/Orientacni_mapa_Tiles/Layers/aerial/{z}/{x}/{y}.png"
+      ],
+      "tileSize": 256
+    },
+    "raster-tiles-plochy": {
+      "type": "raster",
+      "tiles": [
+        "http://pruhonice.noemo-group.eu/wp-content/plugins/pruhonice-park-gis/data/Orientacni_mapa_Tiles/Layers/plochy/{z}/{x}/{y}.png"
+      ],
+      "tileSize": 256
+    }
+  },
+  "layers": [
+    {
+      "id": "simple-tiles-plochy",
+      "type": "raster",
+      "source": "raster-tiles-plochy",
+      "minzoom": 11,
+      "maxzoom": 19
+    }
+  ]
+}
