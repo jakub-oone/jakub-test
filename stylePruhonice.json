@@ -1,0 +1,24 @@
+{
+        "version": 8,
+        "sources": {
+          "myRasterSource": {
+            "type": "raster",
+            "tiles": [
+              "http://pruhonice.noemo-group.eu/wp-content/plugins/pruhonice-park-gis/data/Orientacni_mapa_Tiles/Map/{z}/{x}/{y}.png"
+            ],
+            "tileSize": 256
+          }
+        },
+        "layers": [
+          {
+            "id": "myRasterLayer",
+            "type": "raster",
+            "source": "myRasterSource",
+            "minzoom": 0,
+            "maxzoom": 19
+          }
+        ],
+        "id": "pruhonice",
+        "draft": false,
+        "visibility": "public"
+      }
