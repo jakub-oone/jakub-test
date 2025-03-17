@@ -1,0 +1,21 @@
+{
+   "version":8,
+   "sources":{
+      "osm":{
+         "type":"raster",
+         "tiles":[
+            "https://webst03.is.autonavi.com/appmaptile?style=7&x={x}&y={y}&z={z}"
+         ],
+         "tileSize":256,
+         "attribution":"&copy; OpenStreetMap Contributors",
+         "maxzoom":19
+      }
+   },
+   "layers":[
+      {
+         "id":"osm",
+         "type":"raster",
+         "source":"osm"
+      }
+   ]
+}
